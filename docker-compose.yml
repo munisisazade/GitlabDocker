@@ -12,3 +12,4 @@ services:
       - VIRTUAL_PORT=8567
     ports:
       - "8567:80"
+
