@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+
+
+  gitlab:
+    container_name: git
+    restart: "always"
+    build: .
+    environment:
+      - VIRTUAL_HOST=access.e-gov.az
+      - VIRTUAL_PORT=8567
+    ports:
+      - "8567:80"
